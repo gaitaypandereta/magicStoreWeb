@@ -1,0 +1,16 @@
+<svg width="1200" height="206" xmlns="http://www.w3.org/2000/svg">
+ 
+  <defs>
+    <pattern id="Pattern" x="0" y="0" width=".05" height=".09">
+      <path id="my_path" d="M 20,20 C 80,60 100,40 120,20" fill="transparent" />
+      <text>
+        <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#my_path">
+           PTA.
+        </textPath>
+      </text>
+      <rect x="0" y="0" width="10" height="10" fill="skyblue"/>
+    </pattern>
+    <path id="my_path" d="M 20,20 C 80,60 100,40 120,20" fill="" />
+  </defs> 
+  <rect fill="url(#Pattern)" stroke="white" width="1200" height="600"/>
+</svg>

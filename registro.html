@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> Infantil</title>   
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="styles/envio.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+   <script>
+	   
+     function enviar(){
+		 
+	   if( document.getElementById("aceptar").checked == true){ 
+         
+           alert(" Has marcado la casilla acepto y con ello entendemos que has leido con detenimiento las condiciones de uso y Política de Privacidad de esta página ya que al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.");
+           document.getElementById('btn_registro').style.display='block';
+       }
+       else {
+          alert("Debes de leer con detenimiento nuestras condiciones  uso y Política de Privacidad y si estás totalmente de acuerdo aceptarlas marcando la casilla acepto de esta formulario para poder registrarte");
+	       }
+  
+		   document.getElementById('btn_volver').style.display='block';
+		   document.getElementById('btn_comprobar').style.display='none';
+		
+       }
+       
+       function passClick() {
+      
+           $('#password').on("mousedown",function(event) {
+                $(this).attr("type","text");
+           });
+
+           $('#password').on("mouseup",function(event) {
+               $('#password').attr("type","password");
+           });
+       }
+       
+       function checkClick() {
+		document.getElementById("aceptar").checked == true
+        document.getElementById('btn_registro').style.display='block';
+       }
+            
+ </script> 
+ </head>
+ <body >
+  
+		
+     <header class="fondo">
+	    <svg width=250  height=210>
+          <text x=30 y=90 style="font: normal 1em Sail; fill: navy;">
+            <tspan style="font: bold 9.3em 'Sail'; fill: green;">z</tspan>
+            <tspan style="font: bold 5em 'Sail'; fill: red;">0</tspan>
+            <tspan style="font: bold 4em 'Sail'; fill:'#1B5583';">y</tspan>
+          </text>
+          <path id="ruta1" d="M70,110 c0,-60 130,-170 40,-15 s20,110 90,-15 m130,180 z" 
+          fill="none" stroke="red" stroke-width="5"/>
+          <ellipse cx="0" cy="3" rx="15" fill="orange" stroke="18" stroke-width="1">
+            <animateMotion dur="6s" rotate="auto" repeatCount="indefinite">
+              <mpath xlink:href="#ruta1" />
+            </animateMotion>
+         </ellipse>
+         <text x=98 y=90 style="font: normal 1em arial; fill: navy;">
+            <tspan style="font: bold 5em 'Sail'; fill: red;">0</tspan>
+         </text>
+       </svg>    
+    </header>
+    <div class="content">
+      <aside>  
+		    <h1 class="reglog"> Registro </h1>
+		     <form method="post" action="login.html">
+                 <input  type="text" name="login"  placeholder="Tu Usuario" value="" required>
+                 <input  type="email" name="email" placeholder="Tu email te lo inventas pero con @ y ." value="" required>
+                 <input  class="pass" type="password" id="password" placeholder="Tu Contraseña" onclick='passClick(this)' required>
+                 <div class="conditions">
+                     <a href="condiciones.html"> Condiciones de  uso y Política de Privacidad </a>
+                 </div>    
+                 <div class="form">
+                     <input  class="aceptar" type="checkbox" id="aceptar" name="aceptar" value="Aceptar" onclick='checkClick()'>
+                     <label>Acepto</label>
+                 </div>    
+                 <div class="form">
+                   <button id="btn_registro" name="submit" type="submit">REGISTRARSE</button>
+                 </div>
+           </form>
+       
+           <button id ="btn_volver" >VOLVER</button>
+           <button id ="btn_comprobar"  class="enviar" name="comprobar" onclick="enviar()" >ENVIAR</button>
+      </aside>
+   </div>  
+  </body>
+</html>

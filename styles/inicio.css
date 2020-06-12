@@ -1,0 +1,232 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Cabecera de la página */
+header {
+  background: url(""); 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size:cover;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Menú lateral */
+nav {
+  padding: 1em;
+}
+
+nav div {
+  margin-bottom: 20px;
+  display:inline;
+}
+
+/* Estilos de navegación para links */
+nav div  a {
+  color: #000;
+  background-color: #fff;
+  padding: 3px 20px;
+  margin-left:4px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Lobster", cursive;
+}
+
+/* Cambio de  color en hover */
+nav div a:hover {
+  font-family: "Lobster", cursive;
+  background-color: #ddd;
+  color: red;
+ 
+}
+
+
+.texto{
+    font-family: "Lobster", cursive;
+	text-align:justify;
+	color:#43403e;
+	}
+	
+.titulo{
+  color:#f00;
+  text-align:center;
+  padding-top:20px;
+  text-shadow: 0.1em 0.1em 0.05em #909090;
+}
+.subtitulo{
+  color:#43403e;
+  text-align:center;
+  padding-bottom:1px;
+}	
+	
+body {
+  font-family: Arial;
+  margin: 0;
+   background-color: #9FF781;
+}
+
+.header {
+  width:30%;	
+  background: url();
+  background-repeat: no-repeat;
+ 
+}
+
+.navar {
+  display: flex;
+  background-color: #9FF781;
+}
+
+/* Style the navigation bar links */
+.navar a {
+  color: white;
+  background-color: #f00;
+  padding: 3px 20px;
+  margin-left:4px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Cambio de color en hover */
+.navar a:hover {
+  background-color: #ddd;
+  color: black;
+ 
+}
+
+/* Contenedor */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  padding:1%;
+  background-color: #9FF781;
+}
+/*Contenido secundario */
+aside {
+  flex: 30%;
+  background-color: #9FF781;
+  padding: 20px;
+  text-align: center;
+}
+/*Contenido principal  */
+main {
+  flex: 70%;
+  background-color: #9FF781;
+  padding: 1%;
+  padding-bottom:50px;
+}
+/* --Vídeo--*/
+
+/* padding-top nos da tamaño de vídeo */
+.contend{
+height:0px;
+width:100%;
+max-width:560px; /* Ancho máximo*/
+padding-top:56.25%; /* Correspondiente a 16/9  */
+position:relative;
+}
+/*Para adaptar iframe al tamaño de contenedor */
+iframe{
+position:absolute;
+height:100%;
+width:100%;
+top:0px;
+left:0px;
+}
+
+
+/* div img */
+.keimg {
+  background-color: #FFF;
+  width: 100%;
+  padding: 10px;
+  height:auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* div lateral */
+.color{
+    text-align:center;
+	color: #238a19;
+	}
+
+/* div imagen principal  */
+   #card_uno{
+	   margin-bottom:5%;
+	   }
+   #card_dos{
+	   margin-bottom:10%;
+	   }
+   .card_dos{
+	   margin-bottom:1%;
+	  color: #b93b20;
+   }
+  .text_img {
+  text-align: center;
+  padding: 10px 20px;
+  color:#43403e;
+}
+img{
+	 border-radius: 8px;
+	}
+	
+.footer{
+	border-top:3px solid #909090;
+	background-color:#FFF;
+	color:#909090;
+
+	}
+h5.foter{
+  text-align:center;
+}	
+.botom_bord{
+   height:100px;
+   background-color:#909090;
+}
+/*Adaptar img a contenedor */
+@supports(object-fit: cover){
+    .keimg img{
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
+    }
+    
+    .keimg img.center{
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+.img_foter{
+     width:30%;
+     margin-left:35%;
+   }
+/*Par ancho de pantalla menor de 700px se coloca una columna debajo de otra, en vez de dos */
+@media screen and (max-width: 700px) {
+  .row{   
+    flex-direction: column;
+  }
+  .img_foter{
+     width:60%;
+     margin-left:20%;
+   }
+}
+
+@media screen and (max-width: 450px) {
+  .navar{   
+    flex-direction: column;
+  }
+.img_foter{
+     width:90%;
+     margin-left:5%;
+   }
+}
+
+
+

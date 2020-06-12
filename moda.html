@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Moda de Andalucía</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/moda.css">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?&family=Sail&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+<header>
+       <svg width=250  height=220>
+          <text x=30 y=90 style="font: normal 1em Sail; fill: navy;">
+            <tspan style="font: bold 9.3em 'Sail'; fill: green;">z</tspan>
+            <tspan style="font: bold 5em 'Sail'; fill: red;">0</tspan>
+            <tspan style="font: bold 4em 'Sail'; fill:'#1B5583';">y</tspan>
+          </text>
+          <path id="ruta1" d="M70,110 c0,-60 130,-170 40,-15 s20,110 90,-15 m130,180 z" 
+          fill="none" stroke="red" stroke-width="5"/>
+          <ellipse cx="0" cy="3" rx="15" fill="orange" stroke="18" stroke-width="1">
+            <animateMotion dur="6s" rotate="auto" repeatCount="indefinite">
+              <mpath xlink:href="#ruta1" />
+            </animateMotion>
+         </ellipse>18
+         <text x=98 y=90 style="font: normal 1em arial; fill: navy;">
+            <tspan style="font: bold 5em 'Sail'; fill: red;">0</tspan>
+         </text>
+       </svg>    
+  </header>
+      <nav>
+        <div><a href="inicio.html">Inicio</a></div>
+        <div><a href="infantil.html">Niños</a></div>
+      </nav>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <aside>
+     <h2 class="color">NUEVOS TEJIDOS </h2>
+     <p class="texto">Presentamos los nuevos tejidos  y diseños que han seleccionado nuestros lectores y lectoras.
+     ¡Aquí están ya los triunfadores!
+     </p>
+    <div id="card_dos" class="keimg" style="height:310;">
+     <img src="svg/lunares_pta.svg">
+      <div class="text_img">
+		  <h2>ALGODON</h2>
+          <h5>Inspiración PTA Málaga</h5>
+       </div>
+    </div>
+    <div id="card_dos" class="keimg" style="height:310;">
+       <img src="svg/lunares_verde_cortado.svg">
+       <div class="text_img">
+		  <h2>ALGODÓN</h2>
+          <h5>Inspiración Naturaleza</h5>
+       </div>
+    </div>
+    <div id="card_dos" class="keimg" style="height:310;">
+		 <img src="svg/lunares_finos.svg">
+		 <div class="text_img">
+		     <h2>ALGODÓN</h2>
+             <h5>Inspiración Infantil</h5>
+         </div>
+     </div> 
+  </aside>
+  
+  <main> 
+	   <h2 class="color">NUEVOS DISEÑOS </h2>
+    <div id="card_uno" class="keimg">
+       <img class="center" src="img/feria_1.jpg">
+       <div class="text_img">
+		  <h2>MANTÓN</h2>
+          <h5>Grandes creadores de Andalucía</h5>
+       </div>
+    </div>
+    <div class="keimg">
+       <img class="center" src="img/vestido.png">
+       <div class="text_img">
+		  <h2>TRAJES INFANTILES</h2>
+          <h5>Grandes creadores de Andalucía</h5>
+       </div>
+    </div>  
+</main>
+
+</div>
+
+</body>

@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+
+h1{
+   font-size:4vw;
+   color:red;
+}
+
+h2{
+ font-size:2vw;
+}
+
+h3{
+	font-size:2.5vw;
+    color:#f00;
+}
+.img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+p {
+  margin: 0px;
+}
+.texto_blanco{
+  width:70%;
+  font-size:28px;
+  color: #FFFFFF;
+  text-align:center;
+  padding:30px;
+  margin-left:15%;
+  font-weight:bold;
+  padding-bottom:10px;
+  background-color:#9FF781;
+}
+
+.titulo{
+  color: #000080;
+  text-align:center;
+  padding-top:20px;
+}
+.subtitulo{
+  color:#43403e;
+  text-align:center;
+  padding-bottom:1px;
+}
+body {
+  background-color: white;
+}
+.texto{
+    font-family: "Lobster", cursive;
+	text-align:justify;
+	color:#43403e;
+	padding:20px;
+	
+	}
+/* Este es el contenedor General donde fijo la estructura de la rejilla o Grid */
+.container {
+  color: #666666;
+  background-color:#9FF781;
+  display: grid;
+  font-family: "Lobster", cursive;
+  grid-auto-flow: row;
+  grid-row-gap: 1em;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto auto auto auto auto;
+  margin: 20px auto;
+  width: 100%;
+}
+.fondo{
+  background: url("../img/barner.png"); 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size:cover;
+}
+/* Cabecera de la página */
+header { 
+  border-bottom: 1px solid #666666;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  padding: 1em;
+  text-align: center;
+  width:100%;
+}
+/* Menú lateral*/
+nav {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  padding: 1em;
+  background-color: #9FF781;
+}
+
+nav div {
+  margin-bottom: 20px;
+  display:inline;
+}
+
+/* Estilos de navegación para links */
+nav div  a {
+  color: #000;
+  background-color: #fff;
+  padding: 3px 20px;
+  margin-left:4px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Lobster", cursive;
+}
+
+/* Cambio de  color en hover */
+nav div a:hover {
+  font-family: "Lobster", cursive;
+  background-color: #ddd;
+  color: red;
+ 
+}
+.yayi{
+ width:90%;
+margin-top:60px;	
+ }
+ .bord{
+  width:30%;
+  margin-left:35%;
+   border-radius: 8px;
+   background-color:#fff;
+ }
+ border-radius: 8px;
+}
+.borde{
+  border: 1px solid #aaaaaa;
+  border-radius: 1em;
+  padding:1%;
+  margin-bottom:2%;
+  background-color: white;
+}
+.amigre{
+ color:#008000;
+ text-align:center;
+}
+.amired{
+  color:#f00;
+  text-align:center;
+}
+/*  */
+main {
+  grid-column: 1 / 5;
+  grid-row: 3 / 4;
+  justify-self: center;
+  padding: 1em;
+  text-align: center;
+  width: 98%;
+  background-color: #9FF781;
+}
+
+main img {
+  border-radius: 1em;
+  height: 90%;
+  width: 100%;
+}
+
+aside{
+  border: 1px solid #aaaaaa;
+  border-radius: 1em;
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+  justify-self: center;
+  padding: 1em;
+  text-align: center;
+  width: 95%;
+  background-color:;
+
+}
+iframe { width:100%;
+     height: 500px;
+     padding:1%;
+     border-radius: 1em;
+ }
+audio { width: 90%; } 
+/* Resto de imágenes. Colocadas por grid-auto-flow que por defecto es row */
+article {
+  border: 1px solid #aaaaaa;
+  border-radius: 1em;
+  grid-column: 3 / 5;
+  grid-row: 4 / 5;
+  padding:1em;
+  text-align: center;
+  width: 95%;
+  background-color: ;
+}
+
+article img, aside img {
+  border-radius: 1em;
+  margin-Bottom:16px;
+}
+
+#base_click{
+  position:relative;
+}
+
+#click {
+  position: absolute;
+  top:40%;
+  left:75%;
+  right: 0;
+  margin: 0 auto;
+  width: 20%;
+  height:30%;
+
+}
+.hyde{
+     display: none;
+}
+/* Pie de la página */
+footer {
+  align-items: center;
+  border-top: 1px solid #666666;
+  grid-column: 1 / 5;
+  grid-row: 6 / 7;
+  justify-content: space-between;
+  padding: 1px;
+}
+.enviar_chikis{
+  width:20%;
+  height:40px;
+  margin-left:40%;
+  background-color:#FFF;
+  color:#909090;
+  margin-bottom:90px;
+}
+
+footer img {
+  width: 50px;
+}
+
+/*Par ancho de pantalla menor de 700px se coloca una columna debajo de otra, en vez de dos */
+@media screen and (max-width: 700px) {
+ aside{
+  border: 1px solid #aaaaaa;
+  border-radius: 1em;
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+  justify-self: center;
+  padding: 1em;
+  text-align: center;
+  width: 95%;
+}
+article {
+  border: 1px solid #aaaaaa;
+  border-radius: 1em;
+  grid-column: 1 / 5;
+  grid-row: 5 / 6;
+  justify-self: center;
+  padding:1em;
+  text-align: center;
+  width: 95%;
+}
+h1{
+   font-size:6vw;
+}
+h2{
+ font-size:5vw;
+}
+h5{
+ font-size:3vw;
+}
+@media screen and (max-width: 450px) {
+  .navar{   
+    flex-direction: column;
+  }
+}
+

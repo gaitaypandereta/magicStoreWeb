@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+    <title>Juegos infantiles</title>
+    <link rel="stylesheet" type="text/css" href="styles/infantil.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/createjs.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#click").on('click', function() {
+        $(".hyde").show();
+        $("#shoy").hide();  
+				
+        return false;
+       });
+    });
+		      
+</script>
+
+   
+ 
+ </head>
+ <body onload="init();" >
+    <div class="container">
+	
+      <header class="fondo">
+	
+	     <svg width=250  height=210>
+          <text x=30 y=90 style="font: normal 1em Sail; fill: navy;">
+            <tspan style="font: bold 9.3em 'Sail'; fill: green;">z</tspan>
+            <tspan style="font: bold 5em 'Sail'; fill: red;">0</tspan>
+            <tspan style="font: bold 4em 'Sail'; fill:'#1B5583';">y</tspan>
+          </text>
+          <path id="ruta1" d="M70,110 c0,-60 130,-170 40,-15 s20,110 90,-15 m130,180 z" 
+          fill="none" stroke="red" stroke-width="5"/>
+          <ellipse cx="0" cy="3" rx="15" fill="orange" stroke="18" stroke-width="1">
+            <animateMotion dur="6s" rotate="auto" repeatCount="indefinite">
+              <mpath xlink:href="#ruta1" />
+            </animateMotion>
+         </ellipse>
+         <text x=98 y=90 style="font: normal 1em arial; fill: navy;">
+            <tspan style="font: bold 5em 'Sail'; fill: red;">0</tspan>
+         </text>
+       </svg> 
+		  
+        <h1>¡¡Tu Chiqui Web!!</h1>
+      
+      </header>
+    
+      <nav>
+        <div><a href="inicio.html">Inicio</a></div>
+        <div><a href="moda.html">Moda</a></div> 
+      </nav>
+      <main>
+		  
+		 <div id="shoy" class="borde">
+			  <h1 class="titulo">¡Pobre cervatilla!</h1> 
+			  <h2 class="subtitulo">Tiene rota su casita....¡y cómo llora! </h2>
+			   <p class="texto">En una noche muy fea, oscura y lloviendo mucho y con el vientecillo que soplaba muy fuerte, pero que muy fuerte, 
+			   y como la casita de la cervatilla era vieja el viento entró y se la rompió  pero como la cervatilla era muy buena  la nubecita aei
+			   al enterarse vino y le está sujetando el tejadito para que no se rompa también y no se mojen sus cervatillas pequeñitas. 
+			   Pero ahora no tiene cuartito donde dormir y tampoco una puertecita o una ventanita para asomarse.
+			  ¿Le ayudamos? Sólo tienes que decir tus palabras mágicas, esas que tu sabes y un toquecito en el tejadito rojo donde hay un dedito ¿y...? ¿Qué pasará? </p>
+			   <div id="base_click">
+                   <img src="img/base.jpg">
+                   <div id="click"></div>
+               </div>
+              
+		 </div> 
+		 <div class="borde hyde">
+			 <h1 class="titulo">¡ Anda ! ¡ Qué bonita ! </h1>
+			 <h2 class="subtitulo">¡Qué grande es! ¡Qué contenta estará la cervatilla!</h2>
+			   
+			   <div width="100%">
+				   
+				   <canvas id="canvas" class="img-fluid" width="100%" height="500px" ></canvas>
+            
+			   </div>
+		 </div>  
+		 <div class="borde hyde">
+			 <h1 class="titulo">Yo lo hice así </h1>
+			 <h2 class="subtitulo">¡Pero el tuyo va a ser más, más bonito!</h2>
+			 <img class="img-fluid" src="img/casita.png">
+			 <h1 class="titulo">En este vídeo te digo como hacelo</h1>
+			 <h2 class="subtitulo"> Las piezas de encima se quedan por arriba siempre</h2>
+			 <h2 class="subtitulo"> ¡¡¡Tiene trampa!!!</h2>
+			<iframe 
+                src="video/casita.mp4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen >
+            </iframe>
+		 </div> 
+      
+      </main>
+
+      <aside>
+	   <h1 class="titulo">Cuento ganador</h1>	  
+       <h2 class="subtitulo">¡Felicidades José Pedro!</h2>
+            <h5 >¿Te lo cuento?</h5>
+            <img src="img/yayo.png" class="img-fluid">
+            <audio controls >
+              <source src="ratita.mp3" type="audio/mpeg">
+              Tu navegador no soporta audio.
+            </audio>
+		 <a href="login.html"> <button>ENVIA TUS CUENTOS</button> </a>
+      </aside>
+      
+      <article>
+       <h1 class="titulo">Dibujo ganador</h1>
+       <h2 class="subtitulo">¡Felicidades Maria Alba!</h2>
+       <h5>¡Tiene un cuento!</h5>
+              <img src="img/patinadora.png" class="img-fluid">
+              <audio controls  width="20%">
+                  <source src="sonidos/horse.ogv" type="audio/ogg" >
+                  <source src="horse.mp3" type="audio/mpeg">
+                  Tu navegador no soporta audio.
+            </audio>
+		<a href="login.html">  <button>ENVIA TUS DIBUJITOS</button> <a/>
+      </article>
+	 </div>  
+    
+  </body>
+</html>
